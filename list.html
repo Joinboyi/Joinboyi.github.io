@@ -18,7 +18,7 @@
   <a href="add.html" class="layui-btn layui-btn-warm">添加商品</a>
 </div>
  
-<table class="layui-table" lay-data="{width: 892, height:330, url:'http://127.0.0.1:8080/c/list', page:true, id:'idTest'}" lay-filter="demo">
+<table class="layui-table" lay-data="{width: 892, height:330, url:'http://www.liuboyi.cn:8080/c/list', page:true, id:'idTest'}" lay-filter="demo">
   <thead>
     <tr>
       <th lay-data="{type:'checkbox', fixed: 'left'}"></th>
@@ -57,7 +57,7 @@ layui.use('table', function(){
         obj.del();
         layer.close(index);
 		$.ajax({
-                url: 'http://127.0.0.1:8080/c/del/'  + data.id,      //换成自己的url
+                url: 'http://www.liuboyi.cn:8080/c/del/'  + data.id,      //换成自己的url
                 type: 'GET',
                 dataType: 'json',
                 success: function (e) {
